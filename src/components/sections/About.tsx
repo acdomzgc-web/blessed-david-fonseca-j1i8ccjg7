@@ -11,7 +11,7 @@ export function About() {
           <FadeIn direction="up" className="order-1 lg:order-1">
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border border-border shadow-2xl">
               <img
-                src="https://img.usecurling.com/p/800/1000?q=crossfit%20coach&color=black"
+                src="https://storage.googleapis.com/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745330376174-8d9e68d0-e14b-4b2a-84d4-c8cba382fec3.jpeg?alt=media&token=1d015c7e-85bb-432a-bc93-b605ab5fb3d0"
                 alt="David Fonseca Coach"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
