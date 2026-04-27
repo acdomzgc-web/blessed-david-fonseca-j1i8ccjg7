@@ -11,7 +11,7 @@ export function useSiteImages() {
       about: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Cara.jpeg`,
       method: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Deadlift.jpeg`,
       benefits: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Clean.jpeg`,
-      logo: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png`,
+      logo: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Coroa.png`,
       loading: true,
     },
   )
@@ -40,7 +40,7 @@ export function useSiteImages() {
               'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Deadlift.jpeg',
             benefits:
               'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Clean.jpeg',
-            logo: 'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png',
+            logo: 'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Coroa.png',
           }
 
           let foundNewAbout = false
