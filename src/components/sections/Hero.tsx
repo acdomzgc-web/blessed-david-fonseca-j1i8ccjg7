@@ -21,6 +21,14 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
       </div>
 
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 w-[600px] md:w-[800px] opacity-[0.05] pointer-events-none z-0 hidden md:block">
+        <img
+          src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Branco.png"
+          alt=""
+          className="w-full h-full object-contain mix-blend-overlay"
+        />
+      </div>
+
       <div className="container relative z-10">
         <div className="max-w-3xl">
           <FadeIn>

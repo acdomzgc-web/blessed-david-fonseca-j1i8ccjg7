@@ -29,8 +29,19 @@ export function Contact() {
   }
 
   return (
-    <section id="contato" className="py-24 bg-secondary/30 border-t border-border">
-      <div className="container">
+    <section
+      id="contato"
+      className="py-24 bg-secondary/30 border-t border-border relative overflow-hidden"
+    >
+      <div className="absolute -left-20 bottom-0 -translate-x-1/4 translate-y-1/4 w-[500px] opacity-[0.03] pointer-events-none z-0">
+        <img
+          src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Vermelho.png"
+          alt=""
+          className="w-full h-full object-contain -rotate-6"
+        />
+      </div>
+
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <FadeIn>
@@ -112,8 +123,15 @@ export function Contact() {
 
           <div>
             <FadeIn delay={150}>
-              <Card className="bg-background border-border shadow-xl">
-                <CardContent className="p-8 md:p-10">
+              <Card className="bg-background border-border shadow-xl relative overflow-hidden">
+                <div className="absolute -right-12 -bottom-12 w-64 opacity-[0.02] pointer-events-none z-0">
+                  <img
+                    src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Branco.png"
+                    alt=""
+                    className="w-full h-full object-contain rotate-12"
+                  />
+                </div>
+                <CardContent className="p-8 md:p-10 relative z-10">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-semibold text-foreground">

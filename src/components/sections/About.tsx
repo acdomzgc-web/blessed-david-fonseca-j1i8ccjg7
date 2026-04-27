@@ -9,6 +9,14 @@ export function About() {
     <section id="quem-e-david" className="py-24 bg-card relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-background/50 to-transparent hidden lg:block" />
 
+      <div className="absolute -left-32 top-20 w-[600px] opacity-[0.02] pointer-events-none -rotate-12 z-0">
+        <img
+          src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Vermelho.png"
+          alt=""
+          className="w-full h-full object-contain"
+        />
+      </div>
+
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <FadeIn direction="up" className="order-1 lg:order-1">
