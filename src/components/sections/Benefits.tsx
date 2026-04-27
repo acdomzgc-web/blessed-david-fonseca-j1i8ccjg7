@@ -1,5 +1,6 @@
 import { FadeIn } from '@/components/FadeIn'
 import { Button } from '@/components/ui/button'
+import { useSiteImages } from '@/hooks/use-site-images'
 
 const benefitsList = [
   { title: 'Saúde Física', desc: 'Força, resistência, flexibilidade e longevidade' },
@@ -11,6 +12,8 @@ const benefitsList = [
 ]
 
 export function Benefits() {
+  const images = useSiteImages()
+
   return (
     <section id="beneficios" className="py-24 bg-background">
       <div className="container">
@@ -18,7 +21,7 @@ export function Benefits() {
           <FadeIn className="order-2 lg:order-1 relative">
             <div className="aspect-[4/5] rounded-xl overflow-hidden border border-border shadow-2xl relative z-10">
               <img
-                src={`${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/ring-dip.jpg`}
+                src={images.benefits}
                 alt="Treinamento Mudando Vidas"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 loading="lazy"

@@ -1,7 +1,10 @@
 import { FadeIn } from '@/components/FadeIn'
 import { Button } from '@/components/ui/button'
+import { useSiteImages } from '@/hooks/use-site-images'
 
 export function About() {
+  const images = useSiteImages()
+
   return (
     <section id="quem-e-david" className="py-24 bg-card relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-background/50 to-transparent hidden lg:block" />
@@ -11,7 +14,7 @@ export function About() {
           <FadeIn direction="up" className="order-1 lg:order-1">
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border border-border shadow-2xl">
               <img
-                src={`${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/hercules.jpg`}
+                src={images.about}
                 alt="David Fonseca Coach"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 loading="lazy"

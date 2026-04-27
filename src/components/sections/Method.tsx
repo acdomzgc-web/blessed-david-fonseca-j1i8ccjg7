@@ -1,5 +1,6 @@
 import { FadeIn } from '@/components/FadeIn'
 import { Dumbbell, Activity, HeartPulse, Users } from 'lucide-react'
+import { useSiteImages } from '@/hooks/use-site-images'
 
 const methods = [
   {
@@ -25,6 +26,8 @@ const methods = [
 ]
 
 export function Method() {
+  const images = useSiteImages()
+
   return (
     <section id="metodo" className="py-24 bg-background">
       <div className="container">
@@ -43,7 +46,7 @@ export function Method() {
           <FadeIn className="w-full lg:w-[400px]">
             <div className="aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden border border-border shadow-2xl relative group">
               <img
-                src={`${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/deadlift.jpg`}
+                src={images.method}
                 alt="Deadlift Competição"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                 loading="lazy"
