@@ -8,7 +8,7 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <a href="#" className="mb-6 block">
               <img
-                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Coroa.png"
+                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Vermelho.png"
                 alt="Blessed"
                 className="h-24 object-contain"
               />
