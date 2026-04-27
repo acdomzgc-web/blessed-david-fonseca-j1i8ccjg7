@@ -6,10 +6,9 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
 
 const navLinks = [
-  { label: 'Quem é David', href: '#sobre' },
+  { label: 'Quem é David', href: '#quem-e-david' },
   { label: 'Método', href: '#metodo' },
-  { label: 'Unidades', href: '#unidades' },
-  { label: 'Benefícios', href: '#beneficios' },
+  { label: 'Certificações', href: '#certificacoes' },
   { label: 'Serviços', href: '#servicos' },
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'FAQ', href: '#faq' },
@@ -48,7 +47,9 @@ export function Header() {
 
         <div className="hidden xl:block">
           <Button asChild className="font-bold hover:scale-105 transition-transform">
-            <a href="#contato">Fale Conosco</a>
+            <a href="https://wa.me/5541987747373" target="_blank" rel="noreferrer">
+              Fale Conosco
+            </a>
           </Button>
         </div>
 
@@ -78,7 +79,12 @@ export function Header() {
                 </a>
               ))}
               <Button asChild className="mt-4 w-full font-bold">
-                <a href="#contato" onClick={() => setIsOpen(false)}>
+                <a
+                  href="https://wa.me/5541987747373"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setIsOpen(false)}
+                >
                   Fale Conosco
                 </a>
               </Button>

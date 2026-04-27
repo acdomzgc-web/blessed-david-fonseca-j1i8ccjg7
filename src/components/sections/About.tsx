@@ -1,14 +1,15 @@
 import { FadeIn } from '@/components/FadeIn'
+import { Button } from '@/components/ui/button'
 
 export function About() {
   return (
-    <section id="sobre" className="py-24 bg-card relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-black/20 to-transparent hidden lg:block" />
+    <section id="quem-e-david" className="py-24 bg-card relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-background/50 to-transparent hidden lg:block" />
 
-      <div className="container">
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <FadeIn direction="up">
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-border">
+          <FadeIn direction="up" className="order-1 lg:order-1">
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden border border-border shadow-2xl">
               <img
                 src="https://img.usecurling.com/p/800/1000?q=crossfit%20coach&color=black"
                 alt="David Fonseca Coach"
@@ -24,31 +25,44 @@ export function About() {
             </div>
           </FadeIn>
 
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center order-2 lg:order-2">
             <FadeIn delay={100}>
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">
                 Quem é David
               </h2>
               <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mb-6">
-                Mais que um <br /> treinador.
+                A história por trás <br /> do treinador.
               </h3>
             </FadeIn>
 
             <FadeIn delay={200} className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Com anos de experiência no cenário do CrossFit competitivo e atuando como Personal
-                Trainer de alto rendimento, minha missão é extrair o máximo do seu potencial físico
-                e mental.
+                David Fonseca - Coach de CrossFit e Personal Trainer. Tenho dedicado a minha vida a
+                transformar a vida de pessoas por meio da saúde, do treinamento físico e mental. Com
+                uma vasta experiência atuando com atletas de elite e alunos buscando qualidade de
+                vida, construí o método BLESSED fundamentado na constância e no trabalho duro.
               </p>
               <p>
-                Acredito que o treinamento não é apenas sobre estética, mas sobre construir um corpo
-                resiliente, capaz de enfrentar os desafios do dia a dia com vigor e saúde. O método{' '}
-                <strong>BLESSED</strong> nasceu da paixão por transformar suor em resultados reais.
+                Acredito fortemente que o seu corpo é a sua principal ferramenta e precisa ser
+                forjado para enfrentar os desafios do dia a dia com excelência. Aqui não tem
+                atalhos, temos transpiração, foco e dedicação diária. Se você quer de fato
+                transformar a sua vida, vem comigo!
               </p>
-              <div className="pt-4 border-t border-border mt-4">
-                <blockquote className="text-white italic font-medium border-l-4 border-primary pl-4 py-1">
-                  "A disciplina é a ponte entre seus objetivos e suas realizações."
+
+              <div className="py-6">
+                <blockquote className="text-primary text-2xl md:text-3xl font-black uppercase italic tracking-tighter">
+                  "A Palavra convence, o exemplo arrasta."
                 </blockquote>
+              </div>
+
+              <div>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-primary text-white hover:bg-primary/90 font-bold uppercase tracking-wider"
+                >
+                  <a href="#servicos">Conhecer Meus Serviços</a>
+                </Button>
               </div>
             </FadeIn>
           </div>

@@ -46,7 +46,7 @@ export function Hero() {
               asChild
               className="text-base h-14 px-8 font-bold border-2 border-primary text-white hover:bg-primary/10"
             >
-              <a href="#sobre">Conheça o Método</a>
+              <a href="#quem-e-david">Conheça o Método</a>
             </Button>
           </FadeIn>
         </div>

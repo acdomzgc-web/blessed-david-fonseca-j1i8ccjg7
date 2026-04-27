@@ -21,14 +21,17 @@ export function Footer() {
           <div className="flex flex-col items-center">
             <h4 className="font-bold text-white mb-4">Links Rápidos</h4>
             <nav className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <a href="#sobre" className="hover:text-primary transition-colors">
+              <a href="#quem-e-david" className="hover:text-primary transition-colors">
                 Quem é David
+              </a>
+              <a href="#metodo" className="hover:text-primary transition-colors">
+                Método
+              </a>
+              <a href="#certificacoes" className="hover:text-primary transition-colors">
+                Certificações
               </a>
               <a href="#servicos" className="hover:text-primary transition-colors">
                 Serviços
-              </a>
-              <a href="#unidades" className="hover:text-primary transition-colors">
-                Unidades
               </a>
               <a href="#faq" className="hover:text-primary transition-colors">
                 FAQ
