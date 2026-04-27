@@ -28,15 +28,28 @@ export function Method() {
   return (
     <section id="metodo" className="py-24 bg-background">
       <div className="container">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <FadeIn>
-            <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">
-              Meu Método de Treinamento
-            </h2>
-            <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mb-6">
-              Híbrido, Funcional e <br />
-              <span className="text-primary">Extremamente Eficaz</span>
-            </h3>
+        <div className="flex flex-col lg:flex-row gap-12 items-center mb-16">
+          <div className="flex-1 text-center lg:text-left">
+            <FadeIn>
+              <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">
+                Meu Método de Treinamento
+              </h2>
+              <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white">
+                Híbrido, Funcional e <br />
+                <span className="text-primary">Extremamente Eficaz</span>
+              </h3>
+            </FadeIn>
+          </div>
+          <FadeIn className="w-full lg:w-[400px]">
+            <div className="aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden border border-border shadow-2xl relative group">
+              <img
+                src="https://storage.googleapis.com/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745331003446-f9ba32cc-c30f-48e0-bb12-07a829141098.jpeg?alt=media&token=81ccfce0-dc36-410a-b2aa-4f2430349479"
+                alt="Deadlift Competição"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
+            </div>
           </FadeIn>
         </div>
 

@@ -18,9 +18,10 @@ export function Benefits() {
           <FadeIn className="order-2 lg:order-1 relative">
             <div className="aspect-[4/5] rounded-xl overflow-hidden border border-border shadow-2xl relative z-10">
               <img
-                src="https://img.usecurling.com/p/800/1000?q=focused%20bearded%20athlete%20sweating&color=black"
+                src="https://storage.googleapis.com/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745331003447-06df483b-31d6-44ec-b8ad-303de11f0c29.jpeg?alt=media&token=24bd9036-7c01-4475-926c-d2c1da0afc96"
                 alt="Treinamento Mudando Vidas"
-                className="w-full h-full object-cover grayscale"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -z-0" />

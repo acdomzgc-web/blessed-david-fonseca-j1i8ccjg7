@@ -9,7 +9,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="https://img.usecurling.com/p/1920/1080?q=crossfit%20athlete%20lifting%20heavy&color=black"
+          src="https://storage.googleapis.com/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745331003445-5d15f333-8473-455b-a8d6-e2bf3ee22709.jpeg?alt=media&token=1a89c89d-4767-42da-ac0e-a61d80b6f9f3"
           alt="Coach David Fonseca in action"
           className="w-full h-full object-cover opacity-50 object-top"
         />
