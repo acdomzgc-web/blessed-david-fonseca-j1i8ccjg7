@@ -34,8 +34,12 @@ export function Header() {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a href="#inicio" className="text-2xl font-black tracking-tighter text-white uppercase">
-          Blessed<span className="text-primary">.</span>
+        <a href="#inicio" className="flex items-center">
+          <img
+            src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png"
+            alt="Blessed"
+            className="h-12 md:h-14 object-contain drop-shadow-md"
+          />
         </a>
 
         <nav className="hidden xl:flex items-center gap-3">
@@ -69,8 +73,12 @@ export function Header() {
             side="right"
             className="w-[300px] sm:w-[400px] border-l-border bg-background"
           >
-            <SheetTitle className="text-left text-2xl font-black mb-8 text-white uppercase">
-              Blessed<span className="text-primary">.</span>
+            <SheetTitle className="text-left mb-8">
+              <img
+                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png"
+                alt="Blessed"
+                className="h-12 object-contain"
+              />
             </SheetTitle>
             <nav className="flex flex-col gap-6">
               {navLinks.map((link) => (

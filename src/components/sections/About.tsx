@@ -25,8 +25,12 @@ export function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80" />
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-primary font-black text-2xl uppercase mb-1">BLESSED.</p>
-                <p className="text-white text-sm font-medium">
+                <img
+                  src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png"
+                  alt="Blessed Logo"
+                  className="h-12 mb-3 object-contain drop-shadow-lg"
+                />
+                <p className="text-white text-sm font-medium drop-shadow-md">
                   Liderando com propósito e disciplina.
                 </p>
               </div>

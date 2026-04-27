@@ -7,10 +7,11 @@ let cachedImages: any = null
 export function useSiteImages() {
   const [images, setImages] = useState(
     cachedImages || {
-      hero: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/hercules.jpg`,
-      about: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/hercules.jpg`,
-      method: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/deadlift.jpg`,
+      hero: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/TEAM%20COCARES%2025.JPG.jpeg`,
+      about: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Cara.jpeg`,
+      method: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Deadlift.jpeg`,
       benefits: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Clean.jpeg`,
+      logo: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png`,
       loading: true,
     },
   )
@@ -33,11 +34,13 @@ export function useSiteImages() {
             `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/${name}`
 
           const newImages = {
-            hero: getFileUrl('hercules.jpg'),
-            about: getFileUrl('hercules.jpg'),
-            method: getFileUrl('deadlift.jpg'),
+            hero: getFileUrl('TEAM%20COCARES%2025.JPG.jpeg'),
+            about: getFileUrl('David%20Cara.jpeg'),
+            method:
+              'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Deadlift.jpeg',
             benefits:
               'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Clean.jpeg',
+            logo: 'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png',
           }
 
           let foundNewAbout = false

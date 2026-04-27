@@ -46,8 +46,8 @@ export function Method() {
           <FadeIn className="w-full lg:w-[400px]">
             <div className="aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden border border-border shadow-2xl relative group">
               <img
-                src={images.method}
-                alt="Deadlift Competição"
+                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Deadlift.jpeg"
+                alt="David Deadlift"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                 loading="lazy"
                 onError={(e) => {

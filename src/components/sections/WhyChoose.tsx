@@ -37,8 +37,13 @@ export function WhyChoose() {
   return (
     <section id="por-que-escolher" className="py-24 bg-card border-y border-border">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 flex flex-col items-center">
           <FadeIn>
+            <img
+              src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png"
+              alt="Blessed Logo"
+              className="h-14 opacity-40 mx-auto mb-6 object-contain"
+            />
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">
               Por que Treinar Comigo?
             </h2>

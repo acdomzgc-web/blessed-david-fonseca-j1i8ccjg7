@@ -6,8 +6,12 @@ export function Footer() {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center md:items-start text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
-            <a href="#" className="text-3xl font-black tracking-tighter text-white uppercase mb-4">
-              BLESSED<span className="text-[#ee011d]">.</span>
+            <a href="#" className="mb-6 block">
+              <img
+                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Chapeu.png"
+                alt="Blessed"
+                className="h-20 object-contain"
+              />
             </a>
             <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
               Transformando vidas através do treinamento funcional e do compromisso com a
