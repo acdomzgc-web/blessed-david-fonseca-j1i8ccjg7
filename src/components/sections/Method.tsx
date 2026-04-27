@@ -43,7 +43,7 @@ export function Method() {
           <FadeIn className="w-full lg:w-[400px]">
             <div className="aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden border border-border shadow-2xl relative group">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745331003446-f9ba32cc-c30f-48e0-bb12-07a829141098.jpeg?alt=media&token=81ccfce0-dc36-410a-b2aa-4f2430349479"
+                src={`${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/deadlift.jpg`}
                 alt="Deadlift Competição"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                 loading="lazy"

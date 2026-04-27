@@ -9,7 +9,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745331003445-5d15f333-8473-455b-a8d6-e2bf3ee22709.jpeg?alt=media&token=1a89c89d-4767-42da-ac0e-a61d80b6f9f3"
+          src={`${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/hercules.jpg`}
           alt="Coach David Fonseca in action"
           className="w-full h-full object-cover opacity-50 object-top"
           onError={(e) => {
