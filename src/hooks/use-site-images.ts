@@ -10,7 +10,7 @@ export function useSiteImages() {
       hero: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/hercules.jpg`,
       about: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/hercules.jpg`,
       method: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/deadlift.jpg`,
-      benefits: `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/site-assets/ring-dip.jpg`,
+      benefits: `https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Clean.jpeg`,
       loading: true,
     },
   )
@@ -36,7 +36,8 @@ export function useSiteImages() {
             hero: getFileUrl('hercules.jpg'),
             about: getFileUrl('hercules.jpg'),
             method: getFileUrl('deadlift.jpg'),
-            benefits: getFileUrl('ring-dip.jpg'),
+            benefits:
+              'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Clean.jpeg',
           }
 
           let foundNewAbout = false
@@ -47,7 +48,7 @@ export function useSiteImages() {
 
             if (name.includes('deadlift')) {
               newImages.method = url
-            } else if (name.includes('ring') || name.includes('dip')) {
+            } else if (name.includes('david clean')) {
               newImages.benefits = url
             } else if (name.includes('hercules')) {
               newImages.hero = url

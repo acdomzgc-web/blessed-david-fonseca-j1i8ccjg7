@@ -15,7 +15,8 @@ const packages = [
     title: '1º Ring Muscle-up',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Domine o Ring Muscle-up com técnica e segurança',
-    image: 'https://img.usecurling.com/p/600/400?q=athlete%20doing%20ring%20muscle%20up',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20RMU.jpeg',
     features: [
       '4 aulas focadas',
       'Progressão técnica',
@@ -28,7 +29,8 @@ const packages = [
     title: '1º Bar Muscle-up',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Conquiste seu primeiro Bar Muscle-up',
-    image: 'https://img.usecurling.com/p/600/400?q=athlete%20doing%20pullups',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20BMU.jpeg',
     features: [
       '4 aulas focadas',
       'Progressão técnica',
@@ -41,7 +43,8 @@ const packages = [
     title: 'Snatch de Invejar',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Domine o Snatch com técnica olímpica',
-    image: 'https://img.usecurling.com/p/600/400?q=athlete%20weightlifting%20snatch',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Snatch%20West%20Cup.JPG.jpeg',
     features: ['4 aulas focadas', 'Técnica olímpica', 'Força e explosão', 'Suporte personalizado'],
     price: 'R$ 397,00',
   },
@@ -62,7 +65,8 @@ const packages = [
     title: 'Apenas Peso Corporal',
     subtitle: 'Pacote 10 Treinos',
     desc: 'Treine em casa com eficácia máxima',
-    image: 'https://img.usecurling.com/p/600/400?q=athlete%20doing%20pushups',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20HSW.jpeg',
     features: [
       '10 treinos completos',
       'Sem equipamento necessário',

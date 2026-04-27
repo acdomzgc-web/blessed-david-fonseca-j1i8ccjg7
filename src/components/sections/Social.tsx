@@ -51,7 +51,7 @@ export function Social() {
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 p-2 shadow-2xl">
               <div className="w-full h-full rounded-full overflow-hidden">
                 <img
-                  src="https://img.usecurling.com/p/800/800?q=fitness%20coach&gender=male"
+                  src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Deadlift%20sem%20camisa.jpeg"
                   alt="David Fonseca Instagram"
                   className="w-full h-full object-cover"
                 />

@@ -23,7 +23,7 @@ export function Locations() {
             <Card className="bg-background border-border overflow-hidden flex flex-col h-full hover:border-primary/50 transition-colors">
               <div className="h-64 overflow-hidden relative">
                 <img
-                  src="https://img.usecurling.com/p/800/600?q=athletes%20training%20in%20crossfit%20gym&color=black"
+                  src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Unidade%20Cocares.jpeg"
                   alt="Cocares CrossFit"
                   className="w-full h-full object-cover"
                 />
@@ -64,8 +64,12 @@ export function Locations() {
 
           <FadeIn delay={200}>
             <Card className="bg-background border-border overflow-hidden flex flex-col h-full hover:border-primary/50 transition-colors">
-              <div className="h-64 bg-secondary flex items-center justify-center relative">
-                <Monitor className="w-24 h-24 text-muted/50" />
+              <div className="h-64 overflow-hidden relative">
+                <img
+                  src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/OPEN26-57.jpg.jpeg"
+                  alt="Treinamento Online"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-4 left-4 bg-primary text-white p-2 rounded-full shadow-lg">
                   <Monitor className="w-5 h-5" />
                 </div>
