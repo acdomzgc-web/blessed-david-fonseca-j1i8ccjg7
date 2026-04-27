@@ -14,7 +14,7 @@ export function About() {
           <FadeIn direction="up" className="order-1 lg:order-1">
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border border-border shadow-2xl">
               <img
-                src={images.about}
+                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Cara.jpeg"
                 alt="David Fonseca Coach"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 loading="lazy"
