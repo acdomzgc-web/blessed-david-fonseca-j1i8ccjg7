@@ -15,7 +15,7 @@ const packages = [
     title: '1º Ring Muscle-up',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Domine o Ring Muscle-up com técnica e segurança',
-    image: 'https://img.usecurling.com/p/600/400?q=gym%20rings',
+    image: 'https://img.usecurling.com/p/600/400?q=athlete%20doing%20ring%20muscle%20up',
     features: [
       '4 aulas focadas',
       'Progressão técnica',
@@ -28,7 +28,7 @@ const packages = [
     title: '1º Bar Muscle-up',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Conquiste seu primeiro Bar Muscle-up',
-    image: 'https://img.usecurling.com/p/600/400?q=pullup%20bar',
+    image: 'https://img.usecurling.com/p/600/400?q=athlete%20doing%20pullups',
     features: [
       '4 aulas focadas',
       'Progressão técnica',
@@ -41,7 +41,7 @@ const packages = [
     title: 'Snatch de Invejar',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Domine o Snatch com técnica olímpica',
-    image: 'https://img.usecurling.com/p/600/400?q=weightlifting%20snatch',
+    image: 'https://img.usecurling.com/p/600/400?q=athlete%20weightlifting%20snatch',
     features: ['4 aulas focadas', 'Técnica olímpica', 'Força e explosão', 'Suporte personalizado'],
     price: 'R$ 397,00',
   },
@@ -49,7 +49,7 @@ const packages = [
     title: 'Double Under Fácil',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Domine o Double Under sem dificuldade',
-    image: 'https://img.usecurling.com/p/600/400?q=jump%20rope',
+    image: 'https://img.usecurling.com/p/600/400?q=athlete%20jumping%20rope',
     features: [
       '4 aulas focadas',
       'Técnica de corda',
@@ -62,7 +62,7 @@ const packages = [
     title: 'Apenas Peso Corporal',
     subtitle: 'Pacote 10 Treinos',
     desc: 'Treine em casa com eficácia máxima',
-    image: 'https://img.usecurling.com/p/600/400?q=bodyweight%20workout',
+    image: 'https://img.usecurling.com/p/600/400?q=athlete%20doing%20pushups',
     features: [
       '10 treinos completos',
       'Sem equipamento necessário',

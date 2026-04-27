@@ -23,7 +23,7 @@ export function Locations() {
             <Card className="bg-background border-border overflow-hidden flex flex-col h-full hover:border-primary/50 transition-colors">
               <div className="h-64 overflow-hidden relative">
                 <img
-                  src="https://img.usecurling.com/p/800/600?q=crossfit%20gym%20interior&color=black"
+                  src="https://img.usecurling.com/p/800/600?q=athletes%20training%20in%20crossfit%20gym&color=black"
                   alt="Cocares CrossFit"
                   className="w-full h-full object-cover"
                 />
