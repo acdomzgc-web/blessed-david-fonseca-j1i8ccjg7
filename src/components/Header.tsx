@@ -9,9 +9,14 @@ const navLinks = [
   { label: 'Quem é David', href: '#quem-e-david' },
   { label: 'Método', href: '#metodo' },
   { label: 'Certificações', href: '#certificacoes' },
+  { label: 'Unidades', href: '#unidades' },
+  { label: 'Redes Sociais', href: '#redes-sociais' },
+  { label: 'Por que escolher', href: '#por-que-escolher' },
+  { label: 'Benefícios', href: '#beneficios' },
   { label: 'Serviços', href: '#servicos' },
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Contato', href: '#contato' },
 ]
 
 export function Header() {
@@ -33,12 +38,12 @@ export function Header() {
           Blessed<span className="text-primary">.</span>
         </a>
 
-        <nav className="hidden xl:flex items-center gap-6">
+        <nav className="hidden xl:flex items-center gap-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-white transition-colors"
+              className="text-xs font-medium text-muted-foreground hover:text-white transition-colors whitespace-nowrap"
             >
               {link.label}
             </a>
