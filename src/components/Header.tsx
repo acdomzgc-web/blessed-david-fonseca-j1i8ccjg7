@@ -36,9 +36,9 @@ export function Header() {
       <div className="container flex items-center justify-between">
         <a href="#inicio" className="flex items-center">
           <img
-            src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Vermelho.png"
+            src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Branco.png"
             alt="Blessed"
-            className="h-14 md:h-16 object-contain drop-shadow-md"
+            className="h-16 md:h-20 object-contain drop-shadow-md"
           />
         </a>
 
@@ -75,9 +75,9 @@ export function Header() {
           >
             <SheetTitle className="text-left mb-8">
               <img
-                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Vermelho.png"
+                src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Branco.png"
                 alt="Blessed"
-                className="h-14 object-contain"
+                className="h-16 object-contain"
               />
             </SheetTitle>
             <nav className="flex flex-col gap-6">

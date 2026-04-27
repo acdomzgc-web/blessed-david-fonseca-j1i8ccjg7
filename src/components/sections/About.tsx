@@ -26,9 +26,9 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80" />
               <div className="absolute bottom-6 left-6 right-6">
                 <img
-                  src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Coroa.png"
+                  src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Branco.png"
                   alt="Blessed Logo"
-                  className="h-16 mb-4 object-contain drop-shadow-lg"
+                  className="h-20 mb-4 object-contain drop-shadow-lg"
                 />
                 <p className="text-white text-sm font-medium drop-shadow-md">
                   Liderando com propósito e disciplina.
