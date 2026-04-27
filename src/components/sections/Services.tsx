@@ -10,42 +10,66 @@ import {
 import { Button } from '@/components/ui/button'
 import { CheckCircle2 } from 'lucide-react'
 
-const services = [
+const packages = [
   {
-    title: 'Consultoria Online',
-    desc: 'Treinamento presencial não é uma opção? Onde você estiver, tenha meu acompanhamento.',
+    title: '1º Ring Muscle-up',
+    subtitle: 'Pacote 4 Aulas',
+    desc: 'Domine o Ring Muscle-up com técnica e segurança',
+    image: 'https://img.usecurling.com/p/600/400?q=gym%20rings',
     features: [
-      'Planilha semanal via App',
-      'Análise de vídeos dos movimentos',
-      'Suporte no WhatsApp',
-      'Ajuste de cargas',
+      '4 aulas focadas',
+      'Progressão técnica',
+      'Padrão de movimento avançado',
+      'Suporte personalizado',
     ],
-    popular: false,
-    link: 'https://wa.me/5541987747373?text=Olá, quero saber mais sobre a Consultoria Online.',
+    price: 'R$ 397,00',
   },
   {
-    title: 'Personal Training',
-    desc: 'Acompanhamento 100% individual e presencial para maximizar seus resultados com segurança.',
+    title: '1º Bar Muscle-up',
+    subtitle: 'Pacote 4 Aulas',
+    desc: 'Conquiste seu primeiro Bar Muscle-up',
+    image: 'https://img.usecurling.com/p/600/400?q=pullup%20bar',
     features: [
-      'Avaliação Física',
-      'Treinos específicos',
-      'Correção em tempo real',
-      'Foco em alta performance',
+      '4 aulas focadas',
+      'Progressão técnica',
+      'Padrão de movimento avançado',
+      'Suporte personalizado',
     ],
-    popular: true,
-    link: 'https://wa.me/5541987747373?text=Olá, quero saber mais sobre o Personal Training.',
+    price: 'R$ 397,00',
   },
   {
-    title: 'CrossFit Group',
-    desc: 'Aulas guiadas em turma, promovendo energia, comunidade e condicionamento geral.',
+    title: 'Snatch de Invejar',
+    subtitle: 'Pacote 4 Aulas',
+    desc: 'Domine o Snatch com técnica olímpica',
+    image: 'https://img.usecurling.com/p/600/400?q=weightlifting%20snatch',
+    features: ['4 aulas focadas', 'Técnica olímpica', 'Força e explosão', 'Suporte personalizado'],
+    price: 'R$ 397,00',
+  },
+  {
+    title: 'Double Under Fácil',
+    subtitle: 'Pacote 4 Aulas',
+    desc: 'Domine o Double Under sem dificuldade',
+    image: 'https://img.usecurling.com/p/600/400?q=jump%20rope',
     features: [
-      'Turmas reduzidas',
-      'Coach dedicado',
-      'Workouts variados (WODs)',
-      'Ambiente motivador',
+      '4 aulas focadas',
+      'Técnica de corda',
+      'Ritmo e coordenação',
+      'Suporte personalizado',
     ],
-    popular: false,
-    link: 'https://wa.me/5541987747373?text=Olá, quero saber mais sobre as aulas de CrossFit.',
+    price: 'R$ 397,00',
+  },
+  {
+    title: 'Apenas Peso Corporal',
+    subtitle: 'Pacote 10 Treinos',
+    desc: 'Treine em casa com eficácia máxima',
+    image: 'https://img.usecurling.com/p/600/400?q=bodyweight%20workout',
+    features: [
+      '10 treinos completos',
+      'Sem equipamento necessário',
+      'Progressão garantida',
+      'Acesso online',
+    ],
+    price: 'R$ 497,00',
   },
 ]
 
@@ -56,60 +80,71 @@ export function Services() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <FadeIn>
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">
-              Planos
+              Meus Serviços e Pacotes
             </h2>
-            <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mb-6">
-              Nossos Serviços
+            <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-foreground mb-6">
+              Escolha o Pacote Ideal para Você
             </h3>
-            <p className="text-muted-foreground text-lg">
-              Escolha a modalidade que melhor se adapta à sua rotina e aos seus objetivos.
-            </p>
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {services.map((service, i) => (
-            <FadeIn key={i} delay={i * 100} className="flex">
-              <Card
-                className={`relative flex flex-col w-full bg-card border-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-black/50 ${service.popular ? 'border-primary ring-1 ring-primary' : ''}`}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto justify-items-center">
+          {packages.map((pkg, i) => {
+            const message = `Olá David! Gostaria de contratar o pacote ${pkg.subtitle} - ${pkg.title}. Pode me passar mais informações?`
+            const waLink = `https://wa.me/5541987747373?text=${encodeURIComponent(message)}`
+
+            return (
+              <FadeIn
+                key={i}
+                delay={i * 100}
+                className={`flex w-full ${i === 3 ? 'lg:col-start-1 lg:col-end-2 lg:translate-x-1/2' : ''} ${i === 4 ? 'lg:col-start-2 lg:col-end-3 lg:translate-x-1/2' : ''}`}
               >
-                {service.popular && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    Mais Procurado
+                <Card className="relative flex flex-col w-full bg-white border border-primary/20 hover:border-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 overflow-hidden">
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src={pkg.image}
+                      alt={pkg.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    />
                   </div>
-                )}
-                <CardHeader>
-                  <CardTitle className="text-2xl font-black uppercase text-white">
-                    {service.title}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground mt-2">
-                    {service.desc}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <ul className="space-y-3">
-                    {service.features.map((feat) => (
-                      <li key={feat} className="flex items-center gap-3 text-sm text-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button
-                    asChild
-                    className="w-full font-bold"
-                    variant={service.popular ? 'default' : 'secondary'}
-                  >
-                    <a href={service.link} target="_blank" rel="noreferrer">
-                      Contratar Plano
-                    </a>
-                  </Button>
-                </CardFooter>
-              </Card>
-            </FadeIn>
-          ))}
+                  <CardHeader>
+                    <div className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">
+                      {pkg.subtitle}
+                    </div>
+                    <CardTitle className="text-2xl font-black uppercase text-primary">
+                      {pkg.title}
+                    </CardTitle>
+                    <CardDescription className="text-black/70 font-medium mt-2">
+                      {pkg.desc}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-1">
+                    <ul className="space-y-3">
+                      {pkg.features.map((feat) => (
+                        <li key={feat} className="flex items-center gap-3 text-sm text-black">
+                          <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                          <span>{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  <CardFooter className="flex-col gap-4 items-start">
+                    <div className="text-3xl font-black text-primary w-full text-center py-2 border-t border-border/50">
+                      {pkg.price}
+                    </div>
+                    <Button
+                      asChild
+                      className="w-full font-bold text-md py-6 bg-primary hover:bg-primary/90 text-white"
+                    >
+                      <a href={waLink} target="_blank" rel="noreferrer">
+                        Quero Este Pacote
+                      </a>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </FadeIn>
+            )
+          })}
         </div>
       </div>
     </section>
