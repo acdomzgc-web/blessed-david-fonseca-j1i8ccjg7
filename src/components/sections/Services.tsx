@@ -52,7 +52,8 @@ const packages = [
     title: 'Double Under Fácil',
     subtitle: 'Pacote 4 Aulas',
     desc: 'Domine o Double Under sem dificuldade',
-    image: 'https://img.usecurling.com/p/600/400?q=athlete%20jumping%20rope',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20DU.jpeg',
     features: [
       '4 aulas focadas',
       'Técnica de corda',

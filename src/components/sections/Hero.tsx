@@ -1,10 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { FadeIn } from '@/components/FadeIn'
-import { useSiteImages } from '@/hooks/use-site-images'
 
 export function Hero() {
-  const images = useSiteImages()
-
   return (
     <section
       id="inicio"
@@ -12,7 +9,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <img
-          src={images.hero}
+          src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/TEAM%20COCARES%2025.JPG.jpeg"
           alt="Coach David Fonseca in action"
           className="w-full h-full object-cover opacity-50 object-top"
           onError={(e) => {
