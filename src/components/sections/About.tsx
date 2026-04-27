@@ -11,10 +11,14 @@ export function About() {
           <FadeIn direction="up" className="order-1 lg:order-1">
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border border-border shadow-2xl">
               <img
-                src="https://storage.googleapis.com/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745331003445-5d15f333-8473-455b-a8d6-e2bf3ee22709.jpeg?alt=media&token=1a89c89d-4767-42da-ac0e-a61d80b6f9f3"
+                src="https://firebasestorage.googleapis.com/v0/b/skip-app-prod.firebasestorage.app/o/c%2Fa52b-d3f49195a037%2F1745331003445-5d15f333-8473-455b-a8d6-e2bf3ee22709.jpeg?alt=media&token=1a89c89d-4767-42da-ac0e-a61d80b6f9f3"
                 alt="David Fonseca Coach"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.src =
+                    'https://img.usecurling.com/p/800/1000?q=muscular%20athlete&color=black'
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80" />
               <div className="absolute bottom-6 left-6 right-6">
