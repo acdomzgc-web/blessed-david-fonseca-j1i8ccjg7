@@ -6,6 +6,7 @@ import { Locations } from '@/components/sections/Locations'
 import { Social } from '@/components/sections/Social'
 import { WhyChoose } from '@/components/sections/WhyChoose'
 import { Benefits } from '@/components/sections/Benefits'
+import { Store } from '@/components/sections/Store'
 import { Services } from '@/components/sections/Services'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { Faq } from '@/components/sections/Faq'
@@ -22,6 +23,7 @@ export default function Index() {
       <Social />
       <WhyChoose />
       <Benefits />
+      <Store />
       <Services />
       <Testimonials />
       <Faq />

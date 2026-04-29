@@ -76,12 +76,66 @@ const packages = [
     ],
     price: 'R$ 497,00',
   },
+  {
+    title: 'Clínicas para seu Box',
+    subtitle: 'Serviço B2B',
+    desc: 'Eleve o nível técnico dos alunos do seu Box com uma clínica especializada.',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Coach%20Clinica%20outros%20BOX.JPEG',
+    features: [
+      'Avaliação técnica',
+      'Correção de movimentos',
+      'Dicas avançadas',
+      'Imersão presencial',
+    ],
+    price: 'Sob Consulta',
+    buttonText: 'Contratar',
+  },
+  {
+    title: 'Treinamento para sua Equipe',
+    subtitle: 'Serviço B2B',
+    desc: 'Capacite seus professores para entregarem a melhor experiência aos alunos.',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/David%20Treinamento%20Prof.jpeg',
+    features: [
+      'Metodologia de ensino',
+      'Padrões de movimento',
+      'Didática aplicada',
+      'Workshops práticos',
+    ],
+    price: 'Sob Consulta',
+    buttonText: 'Contratar',
+  },
+  {
+    title: 'Fortalecimento de Ombros',
+    subtitle: 'Programa Específico',
+    desc: '4 treinos com 12 exercícios que vão eliminar de vez suas dores nos ombros.',
+    image:
+      'https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/BEE5A690-5A6D-4CFB-8F08-0356F645104C.jpg.jpeg',
+    features: [
+      '4 treinos completos',
+      '12 exercícios focados',
+      'Protocolo preventivo',
+      'Acesso online',
+    ],
+    price: 'R$ 59,90',
+    buttonText: 'Quero este pacote',
+  },
 ]
 
 export function Services() {
   return (
-    <section id="servicos" className="py-24 bg-background">
-      <div className="container">
+    <section id="servicos" className="py-24 bg-background relative overflow-hidden">
+      {/* Background Watermark */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center opacity-[0.02] pointer-events-none">
+        <img
+          src="https://rrmhtpwtsusahmyazwhf.supabase.co/storage/v1/object/public/site-assets/Logo%20Blessed%20Vermelho.png"
+          alt="Blessed Logo Background"
+          className="w-[1000px] max-w-none object-contain"
+        />
+      </div>
+
+      <div className="container relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <FadeIn>
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">
@@ -99,11 +153,7 @@ export function Services() {
             const waLink = `https://wa.me/5541987747373?text=${encodeURIComponent(message)}`
 
             return (
-              <FadeIn
-                key={i}
-                delay={i * 100}
-                className={`flex w-full ${i === 3 ? 'lg:col-start-1 lg:col-end-2 lg:translate-x-1/2' : ''} ${i === 4 ? 'lg:col-start-2 lg:col-end-3 lg:translate-x-1/2' : ''}`}
-              >
+              <FadeIn key={i} delay={(i % 3) * 100} className="flex w-full">
                 <Card className="relative flex flex-col w-full bg-white border border-primary/20 hover:border-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 overflow-hidden">
                   <div className="h-48 overflow-hidden">
                     <img
@@ -139,10 +189,10 @@ export function Services() {
                     </div>
                     <Button
                       asChild
-                      className="w-full font-bold text-md py-6 bg-primary hover:bg-primary/90 text-white"
+                      className="w-full font-bold text-md py-6 bg-primary hover:bg-primary/90 text-white uppercase"
                     >
                       <a href={waLink} target="_blank" rel="noreferrer">
-                        Quero Este Pacote
+                        {pkg.buttonText || 'Quero Este Pacote'}
                       </a>
                     </Button>
                   </CardFooter>
